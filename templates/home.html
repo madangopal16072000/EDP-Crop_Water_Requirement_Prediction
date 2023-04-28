@@ -9,6 +9,11 @@
   <body>
     <h1>Potato Water Requirements Prediction</h1>
     <form action="{{url_for('predict')}}" method="post">
+      <label for="crop_type">CROP TYPE</label>
+      <select name="CROP TYPE" id="crop_type" required>
+        <option value="POTATO">POTATO</option>
+        <option value="WHEAT">WHEAT</option>
+      </select>
       <label for="soil_type">SOIL TYPE</label>
       <select name="SOIL TYPE" id="soil_type" required>
         <option value="DRY">DRY</option>
