@@ -117,10 +117,10 @@ def predict_api():
         }
         return _
     else:
-        crop_type = data.get("CROP TYPE")
-        soil_type = data.get("SOIL TYPE")
-        region = data.get("REGION")
-        weather_condition = data.get("WEATHER CONDITION")
+        crop_type = data.get("CROP TYPE").upper()
+        soil_type = data.get("SOIL TYPE").upper()
+        region = data.get("REGION").upper()
+        weather_condition = data.get("WEATHER CONDITION").upper()
         temp_min = data.get("TEMP MIN")
         temp_max = data.get("TEMP MAX")
 
